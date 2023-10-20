@@ -16,7 +16,7 @@ resource "google_compute_instance" "cluster_instance" {
   }
 
   network_interface {
-    network = "default"
+    network = google_compute_network.vpc-network.id
     access_config {}
   }
 
