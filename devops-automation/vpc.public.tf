@@ -1,5 +1,5 @@
 resource "google_compute_network" "vpc-network" {
-  name = "public-vpc"
+  name = "rede-vpc"
   auto_create_subnetworks = false
 }  
  
